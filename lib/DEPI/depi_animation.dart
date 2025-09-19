@@ -1,24 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../animation_conttroller/widget/bounce_button.dart';
-import '../animation_conttroller/widget/hotel_card.dart';
-import '../animation_conttroller/widget/offers_reviews.dart';
-import '../animation_conttroller/widget/price_slider.dart';
+import 'widget/bounce_button.dart';
+import 'widget/hotel_card.dart';
+import 'widget/offers_reviews.dart';
+import 'widget/price_slider.dart';
 
-void main() => runApp(const MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Animation DEPI Task Demo',
-      theme: ThemeData(useMaterial3: true, primarySwatch: Colors.blue),
-      home: const DemoPage(),
-    );
-  }
-}
 
 class DemoPage extends StatelessWidget {
   const DemoPage({super.key});
@@ -31,9 +17,9 @@ class DemoPage extends StatelessWidget {
         child: Column(
           children: [
             HotelCard(),
-            const SizedBox(height: 24),
+            const SizedBox(height: 32),
             OffersReviewsSwitcher(),
-            const SizedBox(height: 24),
+            const SizedBox(height: 32),
             const PriceSliderWidget(),
             const SizedBox(height: 24),
             const BookNowBounceButton(),
